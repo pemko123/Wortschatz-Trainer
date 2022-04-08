@@ -1,6 +1,6 @@
 # Wortschatz
 
-In diesem Projekt, kann Englisch und Deutsch geübt werden, in dem man Wörter erfasst oder Beispielwörter als Karten hinzufügt und dann im Training lernt. Sobald man genug gelernt hat kann man den Test absolvieren
+In diesem Projekt, kann Englisch und Deutsch geübt werden, in dem man Wörter erfasst oder Beispielwörter als Karten hinzufügt und dann im Training lernt. Sobald man genug gelernt hat kann man den Test absolvieren.
 
 ## Development server
 
