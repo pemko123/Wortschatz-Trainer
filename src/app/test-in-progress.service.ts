@@ -4,6 +4,15 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class TestInProgressService {
+  testInProgress:boolean = false;
 
   constructor() { }
+
+  isTestInProgress() {
+    return this.testInProgress;
+  }
+
+  setIsTestInProgress(testInProgress:boolean) {
+    this.testInProgress = testInProgress;
+  }
 }

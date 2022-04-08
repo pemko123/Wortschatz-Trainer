@@ -1,0 +1,42 @@
+.addCardDiv {
+  border: 1px solid black;
+  width: 282px;
+  margin-top: 20px;
+  padding: 10px;
+
+  button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f2f2f2;
+      border-color: #333333;
+    }
+  }
+  .addCardButton {
+    float: left;
+    margin-right: 15px;
+  }
+  span {
+    display: block;
+    margin-bottom: 10px;
+
+    label {
+      width: 70px;
+      display: block;
+      float: left;
+    }
+  }
+  h3 {
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+
+
+
+
+

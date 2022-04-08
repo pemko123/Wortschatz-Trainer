@@ -1,1 +1,13 @@
-<p>top-bar works!</p>
+<div>
+  <a [className]="isTestInProgress() ? 'disabled' : ''" [routerLink]="['/']">
+    <h1>Erfassen</h1>
+  </a>
+
+  <a [className]="isTestInProgress() ? 'disabled' : ''" [routerLink]="['/training']">
+    <h1>Trainieren</h1>
+  </a>
+
+  <a [className]="isTestInProgress() ? 'disabled' : ''" [routerLink]="['/test']">
+    <h1>Test</h1>
+  </a>
+</div>

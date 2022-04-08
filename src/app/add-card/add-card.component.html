@@ -1,1 +1,23 @@
-<p>add-card works!</p>
+<div class="addCardDiv">
+  <h3> Neue Karte hinzufügen </h3>
+
+  <form [formGroup]="cardForm" (ngSubmit)="onSubmit()">
+
+    <span>
+      <label for="english">Englisch: </label>
+      <input id="english" type="text" formControlName="english">
+    </span>
+
+    <span>
+      <label for="german">Deutsch: </label>
+      <input id="german" type="text" formControlName="german">
+    </span>
+
+    <p>Complete the form to enable button.</p>
+
+    <button class="addCardButton" type="submit" [disabled]="!cardForm.valid">Hinzufügen</button>
+
+  </form>
+
+  <button (click)="addExampleCard()">Zufällige Karte hinzufügen</button>
+</div>

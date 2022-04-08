@@ -1,1 +1,18 @@
-<p>test works!</p>
+<h2>Test</h2>
+
+<div *ngIf="message else test">
+  <p *ngIf="message">{{ message }}</p>
+</div>
+
+<ng-template #test>
+  <p>Bitte übersetze folgendes Wort:</p>
+  <p *ngIf="word">{{ word }}</p>
+  <form [formGroup]="trainForm" (ngSubmit)="onSubmit()">
+
+    <label for="solution">Lösung: </label>
+    <input id="solution" type="text" formControlName="solution">
+
+    <button type="submit" [disabled]="!trainForm.valid">Prüfen</button>
+  </form>
+</ng-template>
+

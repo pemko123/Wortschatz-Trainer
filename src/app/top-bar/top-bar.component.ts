@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TestInProgressService } from "../test-in-progress.service";
 
 @Component({
   selector: 'app-top-bar',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private testInProgressService: TestInProgressService) { }
 
   ngOnInit(): void {
+  }
+
+  isTestInProgress() {
+    return this.testInProgressService.isTestInProgress();
   }
 
 }

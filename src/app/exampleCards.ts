@@ -1,63 +1,51 @@
-export interface tempCard {
-  id: number;
+export interface exampleCard {
   german: string;
-  english: number;
+  english: string;
 }
 
 export const exampleCards = [
   {
-    id: 1,
     german: 'Sprache',
-    english: 'Language',
+    english: 'language',
   },
   {
-    id: 2,
     german: 'Katze',
-    english: 'Cat',
+    english: 'cat',
   },
   {
-    id: 3,
     german: 'Flasche',
-    english: 'Bottle',
+    english: 'bottle',
   },
   {
-    id: 4,
     german: 'Fenster',
-    english: 'Window',
+    english: 'window',
   },
   {
-    id: 5,
     german: 'Tasse',
-    english: 'Cup',
+    english: 'cup',
   },
   {
-    id: 6,
     german: 'Zug',
-    english: 'Train',
+    english: 'train',
   },
   {
-    id: 7,
     german: 'Brettspiel',
-    english: 'Boardgame',
+    english: 'boardgame',
   },
   {
-    id: 8,
     german: 'Kopfhörer',
-    english: 'Headphones',
+    english: 'headphones',
   },
   {
-    id: 9,
     german: 'Karte',
-    english: 'Card',
+    english: 'card',
   },
   {
-    id: 10,
     german: 'Tisch',
-    english: 'Table',
+    english: 'table',
   },
   {
-    id: 11,
     german: 'Flugzeug',
-    english: 'Airplane',
+    english: 'airplane',
   },
 ];

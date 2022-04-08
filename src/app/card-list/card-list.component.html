@@ -1,1 +1,35 @@
-<p>card-list works!</p>
+<h2> Lernkartei </h2>
+
+<button (click)="myapp.resetAllCards()">Zurücksetzen</button>
+
+<app-add-card></app-add-card>
+
+<div class="cardList">
+  <div *ngFor="let card of cardsArray; let i = index" class="card">
+    <div *ngIf="editMode == i else onlyShow">
+
+      <form [formGroup]="editCardForm" (ngSubmit)="onSubmit()">
+        <span>
+          <input id="index" formControlName="index" value="{{ i }}" hidden="hidden">
+          <label for="german">Deutsch: </label>
+        <input id="german" type="text" formControlName="german">
+        </span>
+        <span>
+          <label for="english">Englisch: </label>
+          <input id="english" type="text" formControlName="english">
+        </span>
+
+        <button type="submit">Karte speichern</button>
+
+      </form>
+    </div>
+
+    <ng-template #onlyShow>
+      <p>Deutsch: {{ card.german }}</p>
+      <p>Englisch: {{ card.english }}</p>
+
+      <button (click)="deleteCard(i)">Karte löschen</button>
+      <button (click)="editCard(i)">Karte editieren</button>
+    </ng-template>
+  </div>
+</div>

@@ -1,1 +1,12 @@
-<p>training works!</p>
+<h2>Training</h2>
+
+<p>Bitte übersetze folgendes Wort:</p>
+<p *ngIf="word">{{ word }}</p>
+<form [formGroup]="trainForm" (ngSubmit)="onSubmit()">
+
+  <label for="solution">Lösung: </label>
+  <input id="solution" type="text" formControlName="solution">
+
+  <button type="submit" [disabled]="!trainForm.valid">Prüfen</button>
+</form>
+<p *ngIf="message">{{ message }}</p>
